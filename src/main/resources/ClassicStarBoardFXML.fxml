@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Circle?>
+
+<AnchorPane fx:id="boardAnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="630.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tpproject.app.clientApp.ClassicStarBoardController">
+   <children>
+      <MenuBar prefHeight="29.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Gra">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#leaveGame" text="Opuść grę" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Circle fill="#ebebeb" layoutX="300.0" layoutY="300.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ebebeb" layoutX="330.0" layoutY="300.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ebebeb" layoutX="360.0" layoutY="300.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ebebeb" layoutX="390.0" layoutY="300.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ebebeb" layoutX="420.0" layoutY="300.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ebebeb" layoutX="270.0" layoutY="300.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ebebeb" layoutX="240.0" layoutY="300.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ebebeb" layoutX="210.0" layoutY="300.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ebebeb" layoutX="180.0" layoutY="300.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ebebeb" layoutX="315.0" layoutY="330.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ebebeb" layoutX="345.0" layoutY="330.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ebebeb" layoutX="375.0" layoutY="330.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ebebeb" layoutX="405.0" layoutY="330.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="corner3_01" fill="#ebebeb" layoutX="435.0" layoutY="330.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ebebeb" layoutX="285.0" layoutY="330.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ebebeb" layoutX="255.0" layoutY="330.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ebebeb" layoutX="225.0" layoutY="330.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ebebeb" layoutX="195.0" layoutY="330.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="corner5_01" fill="#ebebeb" layoutX="165.0" layoutY="330.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="corner6_10" fill="#ebebeb" layoutX="165.0" layoutY="270.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ebebeb" layoutX="315.0" layoutY="270.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ebebeb" layoutX="345.0" layoutY="270.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ebebeb" layoutX="375.0" layoutY="270.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ebebeb" layoutX="405.0" layoutY="270.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="corner2_10" fill="#ebebeb" layoutX="435.0" layoutY="270.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ebebeb" layoutX="285.0" layoutY="270.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ebebeb" layoutX="255.0" layoutY="270.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ebebeb" layoutX="225.0" layoutY="270.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ebebeb" layoutX="195.0" layoutY="270.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ebebeb" layoutX="300.0" layoutY="360.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ebebeb" layoutX="330.0" layoutY="360.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ebebeb" layoutX="360.0" layoutY="360.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ebebeb" layoutX="390.0" layoutY="360.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="corner3_02" fill="#ebebeb" layoutX="420.0" layoutY="360.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ebebeb" layoutX="270.0" layoutY="360.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ebebeb" layoutX="240.0" layoutY="360.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ebebeb" layoutX="210.0" layoutY="360.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="corner5_03" fill="#ebebeb" layoutX="180.0" layoutY="360.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="corner5_02" fill="#ebebeb" layoutX="150.0" layoutY="360.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="corner3_03" fill="#ebebeb" layoutX="450.0" layoutY="360.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ebebeb" layoutX="300.0" layoutY="240.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ebebeb" layoutX="330.0" layoutY="240.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ebebeb" layoutX="360.0" layoutY="240.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ebebeb" layoutX="390.0" layoutY="240.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="corner2_08" fill="#ebebeb" layoutX="420.0" layoutY="240.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ebebeb" layoutX="270.0" layoutY="240.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ebebeb" layoutX="240.0" layoutY="240.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ebebeb" layoutX="210.0" layoutY="240.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="corner6_09" fill="#ebebeb" layoutX="180.0" layoutY="240.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="corner6_08" fill="#ebebeb" layoutX="150.0" layoutY="240.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="corner2_09" fill="#ebebeb" layoutX="450.0" layoutY="240.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="corner6_06" fill="#ebebeb" layoutX="165.0" layoutY="210.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ebebeb" layoutX="315.0" layoutY="210.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ebebeb" layoutX="345.0" layoutY="210.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ebebeb" layoutX="375.0" layoutY="210.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="corner2_05" fill="#ebebeb" layoutX="405.0" layoutY="210.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="corner2_06" fill="#ebebeb" layoutX="435.0" layoutY="210.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ebebeb" layoutX="285.0" layoutY="210.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ebebeb" layoutX="255.0" layoutY="210.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ebebeb" layoutX="225.0" layoutY="210.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="corner6_07" fill="#ebebeb" layoutX="195.0" layoutY="210.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="corner6_05" fill="#ebebeb" layoutX="135.0" layoutY="210.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="corner2_07" fill="#ebebeb" layoutX="465.0" layoutY="210.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="corner5_05" fill="#ebebeb" layoutX="165.0" layoutY="390.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ebebeb" layoutX="315.0" layoutY="390.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ebebeb" layoutX="345.0" layoutY="390.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ebebeb" layoutX="375.0" layoutY="390.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="corner3_04" fill="#ebebeb" layoutX="405.0" layoutY="390.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="corner3_05" fill="#ebebeb" layoutX="435.0" layoutY="390.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ebebeb" layoutX="285.0" layoutY="390.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ebebeb" layoutX="255.0" layoutY="390.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ebebeb" layoutX="225.0" layoutY="390.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="corner5_06" fill="#ebebeb" layoutX="195.0" layoutY="390.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="corner5_04" fill="#ebebeb" layoutX="135.0" layoutY="390.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="corner3_06" fill="#ebebeb" layoutX="465.0" layoutY="390.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ebebeb" layoutX="300.0" layoutY="420.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ebebeb" layoutX="330.0" layoutY="420.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ebebeb" layoutX="360.0" layoutY="420.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="corner3_07" fill="#ebebeb" layoutX="390.0" layoutY="420.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="corner3_08" fill="#ebebeb" layoutX="420.0" layoutY="420.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ebebeb" layoutX="270.0" layoutY="420.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ebebeb" layoutX="240.0" layoutY="420.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="corner5_10" fill="#ebebeb" layoutX="210.0" layoutY="420.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="corner5_09" fill="#ebebeb" layoutX="180.0" layoutY="420.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="corner5_08" fill="#ebebeb" layoutX="150.0" layoutY="420.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="corner3_09" fill="#ebebeb" layoutX="450.0" layoutY="420.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="corner5_07" fill="#ebebeb" layoutX="120.0" layoutY="420.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="corner3_10" fill="#ebebeb" layoutX="480.0" layoutY="420.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ebebeb" layoutX="300.0" layoutY="180.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ebebeb" layoutX="330.0" layoutY="180.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ebebeb" layoutX="360.0" layoutY="180.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="corner2_01" fill="#ebebeb" layoutX="390.0" layoutY="180.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="corner2_02" fill="#ebebeb" layoutX="420.0" layoutY="180.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ebebeb" layoutX="270.0" layoutY="180.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ebebeb" layoutX="240.0" layoutY="180.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="corner6_04" fill="#ebebeb" layoutX="210.0" layoutY="180.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="corner6_03" fill="#ebebeb" layoutX="180.0" layoutY="180.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="corner6_02" fill="#ebebeb" layoutX="150.0" layoutY="180.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="corner2_03" fill="#ebebeb" layoutX="450.0" layoutY="180.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="corner6_01" fill="#ebebeb" layoutX="120.0" layoutY="180.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="corner2_04" fill="#ebebeb" layoutX="480.0" layoutY="180.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="corner4_03" fill="#ebebeb" layoutX="315.0" layoutY="450.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="corner4_02" fill="#ebebeb" layoutX="285.0" layoutY="450.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="corner4_04" fill="#ebebeb" layoutX="345.0" layoutY="450.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="corner4_01" fill="#ebebeb" layoutX="255.0" layoutY="450.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="corner1_09" fill="#c30a0a" layoutX="315.0" layoutY="150.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="corner1_08" fill="#ebebeb" layoutX="285.0" layoutY="150.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="corner1_10" fill="#ebebeb" layoutX="345.0" layoutY="150.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="corner1_07" fill="#ebebeb" layoutX="255.0" layoutY="150.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="corner1_05" fill="#ebebeb" layoutX="300.0" layoutY="120.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="corner1_06" fill="#ebebeb" layoutX="330.0" layoutY="120.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="corner1_04" fill="#ebebeb" layoutX="270.0" layoutY="120.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="corner1_03" fill="#ebebeb" layoutX="315.0" layoutY="90.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="corner1_02" fill="#ebebeb" layoutX="285.0" layoutY="90.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="corner1_01" fill="#ebebeb" layoutX="300.0" layoutY="60.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="corner4_06" fill="#ebebeb" layoutX="300.0" layoutY="480.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="corner4_07" fill="#ebebeb" layoutX="330.0" layoutY="480.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="corner4_05" fill="#ebebeb" layoutX="270.0" layoutY="480.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="corner4_08" fill="#ebebeb" layoutX="285.0" layoutY="510.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="corner4_09" fill="#ebebeb" layoutX="315.0" layoutY="510.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="corner4_10" fill="#ebebeb" layoutX="300.0" layoutY="540.0" onMouseClicked="#chooseField" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <GridPane layoutX="48.0" layoutY="586.0" prefHeight="30.0" prefWidth="504.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="371.0" minWidth="10.0" prefWidth="340.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="246.0" minWidth="10.0" prefWidth="164.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="246.0" minWidth="10.0" prefWidth="164.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="makeMoveButton" mnemonicParsing="false" onAction="#makeMove" prefHeight="26.0" prefWidth="161.0" text="Pasuj" GridPane.columnIndex="1" />
+            <Button mnemonicParsing="false" onAction="#resetMoves" prefHeight="26.0" prefWidth="125.0" text="Reset" GridPane.columnIndex="2" />
+            <Label fx:id="gameInfo" prefHeight="16.0" prefWidth="298.0" text="Oczekiwanie na graczy" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
